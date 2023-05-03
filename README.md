@@ -45,11 +45,11 @@ height = graphics.DrawText("Half transparent text.", new XFont("Helvetica", 10),
 attributes.Top += height;
 attributes.Opacity = 100;
 attributes.Kerning = 20;
-height = graphics.DrawText("Condensed text.", new XFont("Helvetica", 10), attributes);
+height = graphics.DrawText("Condensed text with a <b>bold formatted</b> part.", new XFont("Helvetica", 10), attributes);
 
 attributes.Top += height;
 attributes.Kerning = -50;
-height = graphics.DrawText("Expanded text.", new XFont("Helvetica", 10), attributes);
+height = graphics.DrawText("Expanded text with an <i>italic formatted</i> part.", new XFont("Helvetica", 10), attributes);
 
 attributes.Top += height;
 attributes.Kerning = 0;
