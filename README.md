@@ -3,7 +3,7 @@ This is an extension for PdfSharp. It allows you to draw text with attributes li
 
 The following text formatting are supported:
 
-<b>bold</b><br>
+&lt;b>bold&lt;/b> <b>bold</b><br>
 <i>italic</i><br>
 <u>underlined</u><br>
 <s>strikeout</s><br>
