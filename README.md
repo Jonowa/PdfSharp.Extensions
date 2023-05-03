@@ -27,3 +27,12 @@ The function DrawText() uses the class TextAttributes which has these public pro
 - Color (XColor)
 - Align (enum TextAlign)
 - Angle (rotation angle -90 to 90 deg.)
+
+Example:
+´´´c-sharp
+using PdfSharp.Extensions;
+
+...
+
+var attributes = new TextAttributes(XBrushes.Black, new XPoint(20, 20));
+´´´
