@@ -29,7 +29,7 @@ The function DrawText() uses the class TextAttributes which has these public pro
 - Angle (rotation angle -90 to 90 deg.)
 
 Example:
-```C#
+```C-Sharp
 using PdfSharp.Extensions;
 
 ...
