@@ -3,9 +3,9 @@ This is an extension for PdfSharp. It allows you to draw text with attributes li
 
 The following text formatting are supported:
 
-- &lt;b>bold&lt;/b> = <b>bold</b><br>
-- &lt;i>italic&lt;/i> = <i>italic</i><br>
-- &lt;u>underlined&lt;/u> = <u>underlined</u><br>
+- &lt;b>bold&lt;/b> = <b>bold</b>
+- &lt;i>italic&lt;/i> = <i>italic</i>
+- &lt;u>underlined&lt;/u> = <u>underlined</u>
 - &lt;s>strikeout&lt;/s> = <s>strikeout</s><br>
 - &lt;color='#f00'>red text&lt;/color> (Short HTML color)<br>
 - &lt;color='#ff0000'>red text&lt;/color> (Regular HTML color)<br>
