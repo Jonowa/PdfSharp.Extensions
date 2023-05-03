@@ -56,4 +56,11 @@ attributes.Kerning = 0;
 attributes.Angle = -45;
 height = graphics.DrawText("Text from bottom left to top right.", new XFont("Helvetica", 10), attributes);
 // Note: If angle is not equal to 0 the return value of DrawText is 0!
+
+attributes = new TextAttributes(XBrushes.Black, new XPoint(20, 100)) {
+    Width = 100,
+    Align = TextAlign.Justify
+};
+height = graphics.DrawText("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", new XFont("Helvetica", 10), attributes);
+// The text will have a width of 100 point with automatic line breaks. It also is formatted in justification.
 ```
