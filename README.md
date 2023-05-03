@@ -36,6 +36,7 @@ using PdfSharp.Extensions;
 
 TextAttributes attributes = new TextAttributes(XBrushes.Black, new XPoint(20, 20));
 double height = graphics.DrawText("Hello World.", new XFont("Helvetica", 10), attributes);
+// The function returns the heigt of the text element.
 
 attributes.Top += height;
 attributes.Opacity = 50;
