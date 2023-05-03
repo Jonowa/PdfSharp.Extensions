@@ -15,9 +15,13 @@ The following text formatting are supported:
 <br> (line break as alternative to \n or \r\n)
 
 The function DrawText() uses the class TextAttributes which has these public properties:
+
 Left (X-coordinate)
+
 Top (Y-coordinate)
+
 Width
+
 Height
 LineHeight
 Kerning (letter spacing)
