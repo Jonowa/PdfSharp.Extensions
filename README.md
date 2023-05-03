@@ -4,16 +4,16 @@ This is an extension for PdfSharp. It allows you to draw text with attributes li
 The following text formatting are supported:
 
 &lt;b>bold&lt;/b> <b>bold</b><br>
-<i>italic</i><br>
-<u>underlined</u><br>
-<s>strikeout</s><br>
-<color='#f00'>red text</color> (Short HTML color)<br>
-<color='#ff0000'>red text</color> (Regular HTML color)<br>
-<color='Red'>red text</color> (Named color of 216 basic colors)<br>
-<size=12>change font size</size><br>
-<sub>sub-script</sub><br>
-<sup>superscript</sup><br>
-&lt;br&gt; (line break as alternative to \n or \r\n)
+&lt;i>italic&lt;/i> <i>italic</i><br>
+&lt;u>underlined&lt;/u> <u>underlined</u><br>
+&lt;s>strikeout&lt;/s> <s>strikeout</s><br>
+&lt;color='#f00'>red text&lt;/color> (Short HTML color)<br>
+&lt;color='#ff0000'>red text&lt;/color> (Regular HTML color)<br>
+&lt;color='Red'>red text&lt;/color> (Named color of 216 basic colors)<br>
+&lt;size=12>change font size&lt;/size><br>
+&lt;sub>sub-script&lt;/sub> <sub>sub-script</sub><br>
+&lt;sup>superscript&lt;/sup> <sup>superscript</sup><br>
+&lt;br> (line break as alternative to \n or \r\n)
 
 The function DrawText() uses the class TextAttributes which has these public properties:
 
