@@ -29,11 +29,30 @@ The function DrawText() uses the class TextAttributes which has these public pro
 - Angle (rotation angle -90 to 90 deg.)
 
 Example:
-```C-Sharp
+```C#
 using PdfSharp.Extensions;
 
 ...
 
-var attributes = new TextAttributes(XBrushes.Black, new XPoint(20, 20));
-graphics.DrawText("Hello World.", new XFont("Helvetica", 10), attributes);
+TextAttributes attributes = new TextAttributes(XBrushes.Black, new XPoint(20, 20));
+double height = graphics.DrawText("Hello World.", new XFont("Helvetica", 10), attributes);
+
+attributes.Top += height;
+attributes.Opacity = 50;
+height = graphics.DrawText("Half transparent text.", new XFont("Helvetica", 10), attributes);
+
+attributes.Top += height;
+attributes.Opacity = 100;
+attributes.Kerning = 20;
+height = graphics.DrawText("Condensed text.", new XFont("Helvetica", 10), attributes);
+
+attributes.Top += height;
+attributes.Kerning = -50;
+height = graphics.DrawText("Expanded text.", new XFont("Helvetica", 10), attributes);
+
+attributes.Top += height;
+attributes.Kerning = 0;
+attributes.Angle = -45;
+height = graphics.DrawText("Text from bottom left to top right.", new XFont("Helvetica", 10), attributes);
+// Note: If angle is not equal to 0 the return value of DrawText is 0!
 ```
