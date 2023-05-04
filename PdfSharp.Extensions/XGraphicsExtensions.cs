@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -270,6 +270,11 @@ namespace PdfSharp.Extensions
                             }
                         }
 
+                        if (word.Count == 0)
+                        {
+                            word.Add(new Letter(g, ' ', font, attributes, baseline));
+                        }
+                        
                         word[word.Count - 1].AddLineBreak();
 
                         if (GetTextWidth(letters) + GetTextWidth(word) >= attributes.Width)
