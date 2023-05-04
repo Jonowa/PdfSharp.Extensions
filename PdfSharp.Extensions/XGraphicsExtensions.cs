@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Globalization;
-#if GDI
-using System.Drawing;
-#endif
 
 namespace PdfSharp.Extensions
 {
@@ -160,8 +157,12 @@ namespace PdfSharp.Extensions
                                 }
                                 else
                                 {
+#if GDI
+                                    attributes.Color = XColor.FromName(color);
+#else
                                     var systemColor = Color.FromName(color);
                                     attributes.Color = XColor.FromArgb(systemColor.R, systemColor.G, systemColor.B);
+#endif
                                 }
                                 break;
 
