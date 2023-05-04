@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Globalization;
+#if GDI
+using System.Drawing;
+#endif
 
 namespace PdfSharp.Extensions
 {
