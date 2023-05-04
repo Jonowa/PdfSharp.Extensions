@@ -166,7 +166,9 @@ namespace PdfSharp.Extensions
                                 if (tag.Length != 2) break;
 
                                 var size = tag[1].Trim('\'');
-                                font = new XFont(font.Name, double.Parse(size), font.Style);
+                                XUnit s = new XUnit(double.Parse(size));
+                                s.ConvertType(g.PageUnit);
+                                font = new XFont(font.Name, s.Value, font.Style);
                                 break;
 
                             case 6: // sub = sub-script ON
